@@ -4,38 +4,83 @@
     background-color: #F1C40F;
     background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+   
+
     
   }
+
 .container{
     
     height: 100%;
-    background-color: #E7DCE3;
+    background-color: #52BE80;
+    overflow: auto;
+    padding-bottom: 150px;
+    margin-top: 20px;
+    
+    
+    
+ 
+
+    
 }
+#wrap {
+    min-height: 100%;
+    position: relative;
+}
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    /* -ms-flex-wrap: wrap; */
+    flex-wrap: wrap;
+    /* -ms-flex-align: center; */
+    align-items: center;
+    /* -ms-flex-pack: justify; */
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    background-color: #9fa099;
+}
+.navbar navbar-light{
+    border: bottom 10px;
+    border-bottom-color: #e3f018 ;
+}
+
 #img1 {
     width: 100%;
     margin-bottom: 10px;
 }
 
 .bg-light {
-    background-color: #E5B0D2;
+    background-color: #F0F3F4;
 }
 
 .nav-link .active {
-    color: #E5B0D2;
+    color: #e3f018 !important;
 }
-
-
-.footer{
-    width: 100%;    position: absolute;
+/* This is supposed to span the card/image in portfolio. */
+.portfolio__item span {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    transform: translateX(-50%);
+    background: rgb(76, 170, 165);
+}
+.footer
+{
     bottom: 0;
     width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background-color: #f5f5f5 !important;
-}
-}
-.fab .fa-github-alt{
-    width: 100%;
-    height: 100%;
+    height: 65px;
+    line-height: inherit;
+    background-color: #9fa099 !important;
+    text-align: center;
+    position: fixed;
+    margin-top: -50px;
+    clear: both;
+    padding-top: 20px;
 
+   
 }
